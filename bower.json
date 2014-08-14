@@ -1,0 +1,12 @@
+{
+  "name": "07ShoppingFlash",
+  "options": {
+    "preffix": "sf"
+  },
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-mocks": "~1.2.16"
+  }
+}
+
