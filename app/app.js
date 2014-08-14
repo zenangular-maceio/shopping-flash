@@ -4,15 +4,15 @@ angular.module('ShoppingFlash', ['ngRoute'])
     .config(['$routeProvider',
     function (routeProvider) {
         routeProvider.
-        when('/products', {
+        when('/', {
             templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
         }).
-        when('/products/:id', {
+        when('/product/:id', {
             templateUrl: 'partials/productDetails.html',
             controller: 'ProductDetailsCtrl'
         }).
         otherwise({
-            redirectTo: '/products'
+            redirectTo: '/'
         });
 }]);
