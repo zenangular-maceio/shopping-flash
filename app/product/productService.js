@@ -8,7 +8,7 @@ angular.module('sf.product')
                 name: "Produto A",
                 price: 10,
                 type: "Brinquedo",
-                photos: ["foto1","foto2"],
+                photos: ["foto1.jpg","foto2.jpg"],
                 description: "Brinquedo Angular 1"
         },
             {
@@ -16,7 +16,7 @@ angular.module('sf.product')
                 name: "Produto B",
                 price: 120,
                 type: "Livro",
-                photos: ["foto1","foto2"],
+                photos: ["foto1.jpg","foto2.jpg"],
                 description: "Livro Angular 2"
         },
         {
@@ -24,7 +24,7 @@ angular.module('sf.product')
                 name: "Produto C",
                 price: 110,
                 type: "Flash Pro",
-                photos: ["foto1","foto2"],
+                photos: ["foto1.jpg","foto2.jpg"],
                 description: "Livro Angular 2"
         },
         {
@@ -32,7 +32,7 @@ angular.module('sf.product')
                 name: "Produto D",
                 price: 220,
                 type: "Livro",
-                photos: ["foto1","foto2"],
+                photos: ["foto1.jpg","foto2.jpg"],
                 description: "Livro Angular 2"
         },
         {
@@ -40,7 +40,7 @@ angular.module('sf.product')
                 name: "Produto E",
                 price: 1,
                 type: "Livro",
-                photos: ["foto1","foto2"],
+                photos: ["foto1.jpg","foto2.jpg"],
                 description: "Livro Angular 2"
         }
 
@@ -51,6 +51,14 @@ angular.module('sf.product')
         return {
             getProducts: function () {
                 return products;
+            },
+            getProduct: function(id){
+                var i = 0;
+                for(i=0;i<products.length;i++){
+                    if(products[i].id == id) 
+                        return products[i];
+                }
+                return null;
             }
 
         };

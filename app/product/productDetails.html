@@ -1,1 +1,8 @@
-PRODUCT DETAILS
+<div id="product-detail-header"> {{product.name}}</div>
+
+<div id="photos-container" style="margin-top:100px; width:200px;">
+<h3>Photos</h3>
+<ul>
+	<li ng-repeat="photo in product.photos">{{photo}}</li>
+</ul>
+</div>

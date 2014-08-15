@@ -11,8 +11,8 @@
 </div>
 
 <div id="products-container">
-	<ul>
-		<li ng-repeat="product in products | orderBy:property:reverse | filter: search" > 
+	<ul style="list-style-type:none;">
+		<li style="margin-top:10px; cursor:pointer;" ng-repeat="product in products | orderBy:property:reverse | filter: search" ng-click="loadSection(product.id)"> 
 			<fl-product-widget name="{{product.name}}" price="{{product.price}}"></fl-product-widget>
 		</li>
 	</ul>
