@@ -8,13 +8,21 @@
 
 </head>
 
-<body ng-app="ShoppingFlash">
+<body ng-app="sf.app">
     
     <ng-view></ng-view>
     
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- app -->
     <script src="app.js"></script>
+    <!-- modules -->
+    <script src="cart/cartModule.js"></script>
+    <script src="main/mainModule.js"></script>
+    <script src="product/productModule.js"></script>
+    <!-- services -->
+    <script src="product/productService.js"></script>
+    <!-- controllers -->
     <script src="main/mainCtrl.js"></script>
     <script src="product/productDetailsCtrl.js"></script>
 

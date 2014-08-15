@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ShoppingFlash')
+angular.module('sf.main')
     .controller('MainCtrl', function ($scope) {
 
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ShoppingFlash')
+angular.module('sf.product')
     .controller('ProductDetailsCtrl', function ($scope, $routeParams) {
         console.log($routeParams.id);
 });
