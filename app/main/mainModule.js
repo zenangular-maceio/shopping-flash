@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('sf.main', []);
+angular.module('sf.main', ['sf.product']);
