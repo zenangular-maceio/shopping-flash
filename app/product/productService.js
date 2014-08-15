@@ -1,5 +1,4 @@
 'use strict';
-
 // service
 angular.module('sf.product')
     .factory('ProductService', function () {
