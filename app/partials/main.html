@@ -1,1 +1,3 @@
-MAIN
+<div ng-repeat="product in products">
+    <fl-product-widget name={{product.name}} price={{product.price}} ng-click="routeTo(product.id)"></fl-product-widget>
+</div>

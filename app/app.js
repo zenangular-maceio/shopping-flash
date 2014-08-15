@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ShoppingFlash', ['ngRoute'])
+angular.module('ShoppingFlash', ['ngRoute', 'Services','Directives'])
     .config(['$routeProvider',
     function (routeProvider) {
         routeProvider.
