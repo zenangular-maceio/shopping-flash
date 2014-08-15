@@ -1,4 +1,9 @@
-MAIN
+<header>
+    <div id="logo">LOGO</div>
+    <input type="search" ng-model="search.name" placeholder="Product Name">
+    <input type="search" ng-model="search.type" placeholder="Product Type">
+
+</header>
 
 <div id="filters-container">
 	<button ng-click="property = 'price'; reverse=!reverse">Order by Price</button>
@@ -7,7 +12,7 @@ MAIN
 
 <div id="products-container">
 	<ul>
-		<li ng-repeat="product in products | orderBy:property:reverse" > 
+		<li ng-repeat="product in products | orderBy:property:reverse | filter: search" > 
 			<fl-product-widget name="{{product.name}}" price="{{product.price}}"></fl-product-widget>
 		</li>
 	</ul>

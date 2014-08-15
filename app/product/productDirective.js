@@ -8,6 +8,6 @@ angular.module('sf.product')
 			name: '@',
 			price: '@'
 		},
-		template: '<h3>{{name}}  {{price}}</h3>'
+		template: '<h3>{{name}}  {{price | currency}}</h3>'
 	};
 });

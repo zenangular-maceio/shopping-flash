@@ -6,7 +6,7 @@ angular.module('sf.product')
         // privado
         var products = [{
                 id: 1,
-                name: "Produto 1",
+                name: "Produto A",
                 price: 10,
                 type: "Brinquedo",
                 photos: ["foto1","foto2"],
@@ -14,7 +14,7 @@ angular.module('sf.product')
         },
             {
                 id: 2,
-                name: "Produto 2",
+                name: "Produto B",
                 price: 120,
                 type: "Livro",
                 photos: ["foto1","foto2"],
@@ -22,7 +22,7 @@ angular.module('sf.product')
         },
         {
                 id: 3,
-                name: "Produto 3",
+                name: "Produto C",
                 price: 110,
                 type: "Flash Pro",
                 photos: ["foto1","foto2"],
@@ -30,7 +30,7 @@ angular.module('sf.product')
         },
         {
                 id: 4,
-                name: "Produto 4",
+                name: "Produto D",
                 price: 220,
                 type: "Livro",
                 photos: ["foto1","foto2"],
@@ -38,7 +38,7 @@ angular.module('sf.product')
         },
         {
                 id: 5,
-                name: "Produto 5",
+                name: "Produto E",
                 price: 1,
                 type: "Livro",
                 photos: ["foto1","foto2"],
